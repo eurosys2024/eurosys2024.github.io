@@ -19,9 +19,9 @@
 
     <script>
     $(function () {
-      var includes = $('[include-html]')
+      var includes = $('[data-include]')
       $.each(includes, function () {
-        var file = $(this).data('include')
+        var file = '' + $(this).data('include')
         $(this).load(file)
       })
     })
@@ -34,9 +34,8 @@
 
     <body id="page-top">
 
-	 <!-- <div include-html="navigation.html"></div> -->
-    <!--#include virtual="navigation.html" -->
-    {% include navigation.html %}
+    <div data-include="navigation.html"></div>
+    <!-- {% include navigation.html %} -->
 
         <!-- Services-->
         <section id="overview">
