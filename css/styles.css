@@ -348,6 +348,7 @@ thead.pap{
 
 table.sch {
   table-layout:auto;
+  width: 100%;
   caption-side: bottom;
   border-collapse: collapse;
   border: 0;
@@ -356,11 +357,6 @@ table.sch {
   vertical-align: top;
 }
 
-th.sch {
-  text-align: inherit;
-  text-align: -webkit-match-parent;
-  border-bottom: solid 2px;
-}
 
 td.sch, th.sch{
   cursor: pointer;
@@ -378,22 +374,30 @@ td.sch.work{
   background-color: #ffdde0;
 }
 td.sch.reg{
-  background-color: #e6ecee;
+  background-color: #ff9010;
 }
-td.sch.st{
-  background-color: #b7f4ad;
+td.sch.session{
+  background-color: #c0e1ec;
+}
+td.sch.open{
+  background-color: #ff6666;
 }
 td.sch.gen{
-  background-color: #e096c3;
+  background-color: #6A9DcC;
 }
 td.sch.close{
   background-color: #f2caaa;
 }
 td.sch.social{
-  background-color: #c0e1ec;
+  background-color: #b7f4ad;
 }
 td.sch.spons{
   background-color: #E3EC1A;
+}
+
+td.sch.time{
+  font-weight: bold;
+  border-left: 0;
 }
 
 tr:nth-child(even) {
@@ -402,6 +406,7 @@ tr:nth-child(even) {
 
 td.sch{
   border-right: solid thin;
+  border-left: solid thin;
   text-align: center;
 }
 
@@ -421,8 +426,16 @@ td.bord{
   border-right: 1px solid;
 }
 
+th.sch{
+  border-left: solid thin;
+  border-right: solid thin;
+  text-align: center;
+}
+
 th.sch.days{
   background-color: #b86a6a;
+  border-top: solid thin;
+  border-bottom: solid thin;
 }
 
 td.sch.days{
@@ -436,6 +449,7 @@ td.sch a{
 
 table.workday {
   table-layout:auto;
+  width: 100%;
   caption-side: bottom;
   border-collapse: collapse;
   border: 0;
